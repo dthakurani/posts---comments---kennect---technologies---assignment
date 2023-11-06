@@ -22,6 +22,8 @@
     "no-process-exit": "off",
     "class-methods-use-this": "off",
     "global-require": "off",
-    "import/no-dynamic-require": "off"
+    "import/no-dynamic-require": "off",
+    "node/no-unsupported-features/es-syntax": "off",
+    "no-underscore-dangle": "off"
   }
 }

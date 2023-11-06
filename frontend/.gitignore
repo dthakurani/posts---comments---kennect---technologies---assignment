@@ -27,3 +27,4 @@ dist-ssr
 .env
 .husky
 .vercel
+.DS_Store
