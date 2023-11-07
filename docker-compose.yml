@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  backend:
+    image: dthakurani/backend:final
+    ports:
+      - 2003:2003
+    env_file:
+      - .env
+
+  frontend:
+    image: dthakurani/frontend:final
+    ports:
+      - 8000:80
