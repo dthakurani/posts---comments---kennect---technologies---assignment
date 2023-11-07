@@ -13,6 +13,11 @@ const navLinks = [
     key: 'posts',
     label: 'Posts',
     path: '/posts'
+  },
+  {
+    key: 'compose',
+    label: 'Compose',
+    path: '/createPost'
   }
 ];
 
