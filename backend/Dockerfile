@@ -7,5 +7,5 @@ COPY package*.json /code
 RUN npm install
 
 COPY ./ /code/
-
+EXPOSE 2003
 CMD npm start

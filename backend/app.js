@@ -19,7 +19,8 @@ app.use(
 );
 
 // Enable cors support to accept cross origin requests
-app.use(cors({ origin: '*', optionsSuccessStatus: 200 }));
+app.use(cors());
+app.options('*', cors());
 
 // Enable helmet js middlewares to configure secure headers
 app.use(helmet());

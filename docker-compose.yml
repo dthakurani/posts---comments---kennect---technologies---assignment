@@ -9,6 +9,8 @@ services:
       - .env
 
   frontend:
-    image: dthakurani/frontend:final
+    build: dthakurani/frontend:final-1
     ports:
       - 8000:80
+    depends_on:
+      - backend
