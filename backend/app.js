@@ -2,11 +2,21 @@ const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
 const compression = require('compression');
+const bodyParser = require('body-parser');
 
 const { commonErrorHandler } = require('./utilities/errorHandler');
 const routes = require('./routes');
 
 const app = express();
+
+app.use(bodyParser.json({ limit: '10mb' }));
+app.use(
+  bodyParser.urlencoded({
+    limit: '10mb',
+    extended: true,
+    parameterLimit: 50000,
+  }),
+);
 
 // Enable cors support to accept cross origin requests
 app.use(cors({ origin: '*', optionsSuccessStatus: 200 }));
